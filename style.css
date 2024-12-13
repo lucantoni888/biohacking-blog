@@ -138,6 +138,123 @@ ul {
     margin-top: 1rem;
 }
 
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
+}
+
+.share-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.share-btn:hover {
+    opacity: 0.9;
+}
+
+.share-btn.twitter {
+    background-color: #1DA1F2;
+}
+
+.share-btn.facebook {
+    background-color: #4267B2;
+}
+
+.share-btn.linkedin {
+    background-color: #0077B5;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.benefit-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.protocol-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.week {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.table-of-contents {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.table-of-contents ol {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+}
+
+.table-of-contents a {
+    color: var(--primary-color);
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.table-of-contents a:hover {
+    text-decoration: underline;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 4rem 0;
+    padding: 3rem;
+    background: var(--background-color);
+    border-radius: 12px;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 1rem;

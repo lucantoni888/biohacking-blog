@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Biohacking France | Optimisation Humaine et Performance</title>
+    <meta name="description" content="Découvrez les meilleures techniques de biohacking, optimisation cognitive et amélioration des performances. Guides experts et conseils scientifiques.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
             --primary-color: #2A2F4F;
@@ -117,6 +119,86 @@
             margin-bottom: 1rem;
         }
 
+        .site-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .social-icon {
+            margin-right: 1rem;
+            color: white;
+        }
+
+        .hero-cta {
+            margin-top: 2rem;
+        }
+
+        .social-proof {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .followers {
+            margin-right: 1rem;
+        }
+
+        .rating {
+            margin-left: 1rem;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .reading-time {
+            margin-right: 1rem;
+        }
+
+        .views {
+            margin-left: 1rem;
+        }
+
+        .social-proof-newsletter {
+            margin-top: 1rem;
+        }
+
+        .subscriber-count {
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .site-footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-social {
+            margin-top: 1rem;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -129,56 +211,124 @@
 </head>
 <body>
     <header>
-        <h2>Blog Biohacking France</h2>
+        <nav class="site-nav">
+            <h2>Blog Biohacking France</h2>
+            <div class="social-icons">
+                <a href="https://twitter.com/biohackingfr" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://linkedin.com/company/biohacking-france" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </nav>
     </header>
 
     <section class="hero">
         <h1>Optimisez Votre Potentiel Humain</h1>
         <p>Découvrez les dernières avancées en biohacking et performance</p>
+        <div class="hero-cta">
+            <a href="#latest-articles" class="btn">Explorer</a>
+            <div class="social-proof">
+                <div class="followers">
+                    <i class="fas fa-users"></i>
+                    <span>10K+ lecteurs</span>
+                </div>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <span>4.9/5 satisfaction</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <main class="container">
-        <h2>Articles Récents</h2>
-        <div class="articles-grid">
-            <article class="article-card">
-                <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=600" alt="Nootropiques" class="article-image">
-                <div class="article-content">
-                    <a href="#" class="category-tag">Optimisation cognitive</a>
-                    <h3>Guide Complet des Nootropiques 2024</h3>
-                    <p>Découvrez comment améliorer naturellement vos performances cognitives avec les nootropiques...</p>
-                    <a href="#" class="btn">Lire la suite</a>
-                </div>
-            </article>
+        <section id="latest-articles">
+            <h2>Articles Récents</h2>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" alt="Méditation pleine conscience" class="article-image">
+                    <div class="article-content">
+                        <a href="articles/meditation-pleine-conscience.html" class="category-tag">Méditation & Mindfulness</a>
+                        <h3>Guide Complet de la Méditation Pleine Conscience</h3>
+                        <p>Découvrez comment la méditation peut transformer votre vie avec notre guide scientifique...</p>
+                        <div class="article-meta">
+                            <span class="reading-time"><i class="far fa-clock"></i> 15 min</span>
+                            <span class="views"><i class="far fa-eye"></i> 2.5K vues</span>
+                        </div>
+                        <a href="articles/meditation-pleine-conscience.html" class="btn">Lire la suite</a>
+                    </div>
+                </article>
 
-            <article class="article-card">
-                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600" alt="Sommeil" class="article-image">
-                <div class="article-content">
-                    <a href="#" class="category-tag">Sommeil & Récupération</a>
-                    <h3>Optimiser son Sommeil : Guide Scientifique</h3>
-                    <p>Les techniques scientifiquement prouvées pour améliorer la qualité de votre sommeil...</p>
-                    <a href="#" class="btn">Lire la suite</a>
-                </div>
-            </article>
+                <article class="article-card">
+                    <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31" alt="Nootropiques" class="article-image">
+                    <div class="article-content">
+                        <a href="articles/nootropiques-guide-complet.html" class="category-tag">Optimisation cognitive</a>
+                        <h3>Guide Complet des Nootropiques 2024</h3>
+                        <p>Les meilleures substances naturelles pour améliorer vos performances cognitives...</p>
+                        <div class="article-meta">
+                            <span class="reading-time"><i class="far fa-clock"></i> 12 min</span>
+                            <span class="views"><i class="far fa-eye"></i> 3.1K vues</span>
+                        </div>
+                        <a href="articles/nootropiques-guide-complet.html" class="btn">Lire la suite</a>
+                    </div>
+                </article>
 
-            <article class="article-card">
-                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600" alt="Nutrition" class="article-image">
-                <div class="article-content">
-                    <a href="#" class="category-tag">Nutrition</a>
-                    <h3>Nutrition Optimale pour la Performance</h3>
-                    <p>Les fondamentaux d'une alimentation optimisée pour la performance mentale et physique...</p>
-                    <a href="#" class="btn">Lire la suite</a>
-                </div>
-            </article>
-        </div>
+                <article class="article-card">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" alt="Sommeil" class="article-image">
+                    <div class="article-content">
+                        <a href="articles/optimisation-sommeil.html" class="category-tag">Sommeil & Récupération</a>
+                        <h3>Optimiser son Sommeil : Guide Scientifique</h3>
+                        <p>Les techniques scientifiquement prouvées pour un sommeil réparateur...</p>
+                        <div class="article-meta">
+                            <span class="reading-time"><i class="far fa-clock"></i> 10 min</span>
+                            <span class="views"><i class="far fa-eye"></i> 1.8K vues</span>
+                        </div>
+                        <a href="articles/optimisation-sommeil.html" class="btn">Lire la suite</a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <section class="newsletter">
-        <h2>Restez à la Pointe du Biohacking</h2>
-        <p>Recevez nos meilleurs articles et conseils directement dans votre boîte mail</p>
-        <form class="newsletter-form">
-            <input type="email" class="newsletter-input" placeholder="Votre adresse email" required>
-            <button type="submit" class="btn">S'abonner</button>
-        </form>
+        <div class="container">
+            <h2>Restez à la Pointe du Biohacking</h2>
+            <p>Recevez nos meilleurs articles et conseils directement dans votre boîte mail</p>
+            <div class="social-proof-newsletter">
+                <div class="subscriber-count">
+                    <i class="fas fa-envelope"></i>
+                    <span>5,000+ abonnés satisfaits</span>
+                </div>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Votre adresse email" required>
+                <button type="submit" class="btn">S'abonner</button>
+            </form>
+            <div class="social-links">
+                <p>Suivez-nous sur les réseaux sociaux</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/biohackingfr" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://linkedin.com/company/biohacking-france" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/biohackingfr" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://linkedin.com/company/biohacking-france" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
