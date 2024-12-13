@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TITRE] | Blog Biohacking France</title>
+    <meta name="description" content="[DESCRIPTION]">
+    <meta property="og:title" content="[TITRE] | Blog Biohacking France">
+    <meta property="og:description" content="[DESCRIPTION]">
+    <meta property="og:image" content="[IMAGE_URL]">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    <header>
+        <nav class="site-nav">
+            <a href="../index.html">Blog Biohacking France</a>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Changer de thème">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="social-icons">
+                    <a href="https://twitter.com/biohackingfr" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://linkedin.com/company/biohacking-france" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <button id="login-btn" class="btn">Se Connecter</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container article-container">
+        <article class="full-article" data-article-id="[ARTICLE_ID]">
+            <div class="article-header">
+                <a href="#" class="category-tag">[CATEGORIE]</a>
+                <h1>[TITRE]</h1>
+                <div class="article-meta">
+                    <span class="reading-time"><i class="far fa-clock"></i> [TEMPS_LECTURE] min</span>
+                    <span class="views"><i class="far fa-eye"></i> [VUES] vues</span>
+                    <button class="share-btn" onclick="shareSystem.shareArticle('[TITRE]', window.location.href)">
+                        <i class="fas fa-share-alt"></i> Partager
+                    </button>
+                </div>
+            </div>
+
+            <div class="table-of-contents">
+                <h2>Table des matières</h2>
+                <ol>
+                    [TABLE_DES_MATIERES]
+                </ol>
+            </div>
+
+            <div class="article-content">
+                [CONTENU]
+            </div>
+
+            <div class="article-footer">
+                <div class="tags">
+                    [TAGS]
+                </div>
+                
+                <div class="share-section">
+                    <h3>Partagez cet article</h3>
+                    <div class="share-buttons">
+                        <button class="share-btn twitter" onclick="shareSystem.shareArticle('[TITRE]', window.location.href, 'twitter')">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </button>
+                        <button class="share-btn facebook" onclick="shareSystem.shareArticle('[TITRE]', window.location.href, 'facebook')">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </button>
+                        <button class="share-btn linkedin" onclick="shareSystem.shareArticle('[TITRE]', window.location.href, 'linkedin')">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <section class="comments-section">
+            <h2>Commentaires</h2>
+            <div id="comments-container"></div>
+            <form id="comment-form" data-article-id="[ARTICLE_ID]">
+                <textarea placeholder="Laissez un commentaire..." required></textarea>
+                <button type="submit" class="btn">Publier</button>
+            </form>
+        </section>
+
+        <aside class="related-articles">
+            <h2>Articles similaires</h2>
+            <div class="articles-grid">
+                [ARTICLES_SIMILAIRES]
+            </div>
+        </aside>
+    </main>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Restez à la Pointe du Biohacking</h2>
+            <p>Recevez nos meilleurs articles et conseils directement dans votre boîte mail</p>
+            <form id="newsletter-form" class="newsletter-form">
+                <input type="email" class="newsletter-input" placeholder="Votre adresse email" required>
+                <div class="interests-grid">
+                    <label class="interest-checkbox">
+                        <input type="checkbox" value="meditation"> Méditation
+                    </label>
+                    <label class="interest-checkbox">
+                        <input type="checkbox" value="nutrition"> Nutrition
+                    </label>
+                    <label class="interest-checkbox">
+                        <input type="checkbox" value="sommeil"> Sommeil
+                    </label>
+                    <label class="interest-checkbox">
+                        <input type="checkbox" value="cognitive"> Optimisation Cognitive
+                    </label>
+                </div>
+                <button type="submit" class="btn">S'abonner</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/biohackingfr" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/biohackingfrance" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://linkedin.com/company/biohacking-france" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/categories.js"></script>
+    <script src="../js/comments.js"></script>
+    <script src="../js/membership.js"></script>
+</body>
+</html>
