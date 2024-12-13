@@ -1,0 +1,38 @@
+INSTRUCTIONS DE DÉPLOIEMENT RAPIDE
+
+1. Créez un compte sur InfinityFree :
+   - Allez sur https://app.infinityfree.net/register
+   - Inscrivez-vous gratuitement
+
+2. Créez un nouveau site :
+   - Cliquez sur "Create Account"
+   - Choisissez un sous-domaine (exemple : biohacking.rf.gd)
+   - Notez vos identifiants de connexion FTP
+
+3. Uploadez les fichiers :
+   - Téléchargez FileZilla (https://filezilla-project.org/)
+   - Connectez-vous avec vos identifiants FTP
+   - Uploadez tout le contenu du dossier 'theme' dans public_html/wp-content/themes/biohacking-theme
+
+4. Installation WordPress :
+   - Allez sur votre domaine (exemple : biohacking.rf.gd)
+   - Suivez l'assistant d'installation WordPress
+   - Choisissez une langue
+   - Créez votre compte administrateur
+
+5. Activation du thème :
+   - Connectez-vous à wp-admin
+   - Allez dans Apparence > Thèmes
+   - Activez le thème "Biohacking France"
+
+Vos fichiers sont prêts dans :
+/Users/isabeau/CascadeProjects/biohacking-blog/theme/
+
+Le thème compressé est dans :
+/Users/isabeau/CascadeProjects/biohacking-blog/biohacking-theme.zip
+
+BONUS : Pour un hébergement professionnel plus tard
+- o2switch : 5€/mois
+- Performances optimales
+- Support français
+- Installation en 1 clic

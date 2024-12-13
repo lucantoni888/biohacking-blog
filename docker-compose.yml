@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: biohackinguser
+      WORDPRESS_DB_PASSWORD: secure_password_here
+      WORDPRESS_DB_NAME: biohacking_blog
+    volumes:
+      - ./theme:/var/www/html/wp-content/themes/biohacking-theme
+      - ./uploads:/var/www/html/wp-content/uploads
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secure_root_password_here
+      MYSQL_DATABASE: biohacking_blog
+      MYSQL_USER: biohackinguser
+      MYSQL_PASSWORD: secure_password_here
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+    depends_on:
+      - db
+
+volumes:
+  db_data:

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Biohacking France | Optimisation Humaine et Performance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2A2F4F;
+            --secondary-color: #917FB3;
+            --accent-color: #E5BEEC;
+            --background-color: #FDE2F3;
+            --text-color: #2C3333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(42, 47, 79, 0.8), rgba(42, 47, 79, 0.8)),
+                        url('https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=1920');
+            background-size: cover;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .category-tag {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+
+        .newsletter {
+            background: var(--background-color);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .newsletter-input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--secondary-color);
+            border-radius: 50px;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                padding: 4rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Blog Biohacking France</h2>
+    </header>
+
+    <section class="hero">
+        <h1>Optimisez Votre Potentiel Humain</h1>
+        <p>Découvrez les dernières avancées en biohacking et performance</p>
+    </section>
+
+    <main class="container">
+        <h2>Articles Récents</h2>
+        <div class="articles-grid">
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=600" alt="Nootropiques" class="article-image">
+                <div class="article-content">
+                    <a href="#" class="category-tag">Optimisation cognitive</a>
+                    <h3>Guide Complet des Nootropiques 2024</h3>
+                    <p>Découvrez comment améliorer naturellement vos performances cognitives avec les nootropiques...</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600" alt="Sommeil" class="article-image">
+                <div class="article-content">
+                    <a href="#" class="category-tag">Sommeil & Récupération</a>
+                    <h3>Optimiser son Sommeil : Guide Scientifique</h3>
+                    <p>Les techniques scientifiquement prouvées pour améliorer la qualité de votre sommeil...</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600" alt="Nutrition" class="article-image">
+                <div class="article-content">
+                    <a href="#" class="category-tag">Nutrition</a>
+                    <h3>Nutrition Optimale pour la Performance</h3>
+                    <p>Les fondamentaux d'une alimentation optimisée pour la performance mentale et physique...</p>
+                    <a href="#" class="btn">Lire la suite</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <section class="newsletter">
+        <h2>Restez à la Pointe du Biohacking</h2>
+        <p>Recevez nos meilleurs articles et conseils directement dans votre boîte mail</p>
+        <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Votre adresse email" required>
+            <button type="submit" class="btn">S'abonner</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,52 @@
+Guide d'Installation du Blog Biohacking France
+
+1. HÉBERGEMENT RECOMMANDÉ
+------------------------
+- o2switch (https://www.o2switch.fr)
+  * Hébergeur français
+  * Support WordPress optimisé
+  * Certificat SSL gratuit
+  * Prix : 5€/mois
+
+2. INSTALLATION
+--------------
+a) Commandez votre hébergement et domaine
+b) Connectez-vous au cPanel de votre hébergeur
+c) Utilisez l'installateur automatique WordPress
+d) Connectez-vous à l'admin WordPress
+
+3. INSTALLATION DU THÈME
+------------------------
+a) Dans wp-admin, allez dans Apparence > Thèmes
+b) Cliquez sur "Ajouter"
+c) Cliquez sur "Téléverser un thème"
+d) Uploadez le fichier biohacking-theme.zip
+e) Activez le thème
+
+4. IMPORT DES ARTICLES
+---------------------
+a) Dans wp-admin, allez dans Outils > Importer
+b) Choisissez "WordPress" et installez l'importateur
+c) Uploadez le fichier articles.xml
+
+5. CONFIGURATION RECOMMANDÉE
+---------------------------
+a) Permaliens : /%category%/%postname%/
+b) Installez les plugins :
+   - Yoast SEO
+   - WP Rocket (cache)
+   - Wordfence (sécurité)
+   - UpdraftPlus (backup)
+
+6. OPTIMISATION SEO
+------------------
+a) Activez Yoast SEO
+b) Configurez Google Search Console
+c) Soumettez le sitemap XML
+d) Vérifiez les méta-descriptions
+
+7. MAINTENANCE
+-------------
+- Faites des sauvegardes régulières
+- Mettez à jour WordPress et les plugins
+- Surveillez les performances avec Google Analytics
